@@ -164,6 +164,7 @@ parser.add_argument('--with_weights', action='store_true',
                     help="whether to use weights from the distance")
 parser.add_argument('--transformer_flag', default='merge3', type=str,
                     help="transformer flag controls which transformer to use")
+parser.add_argument('--fine_tune', action='store_true', help='Enable fine-tuning mode')
 
 args = parser.parse_args()
 return_args = parser.parse_args()

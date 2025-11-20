@@ -109,6 +109,10 @@ def main(args):
         else:
             logger.info("=> no checkpoint found at '{}'".format(args['pre']))
 
+        if args['fine_tune']:
+            args['start_epoch'] = 0
+            print(f"Fine-tuning mode enabled. Starting from epoch {args['start_epoch']}.")
+
     print('best result:', args['best_pred'])
     logger.info('best result = {:.3f}'.format(args['best_pred']))
     torch.set_num_threads(args['workers'])
