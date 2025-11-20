@@ -32,7 +32,7 @@ warnings.filterwarnings('ignore')
 '''fixed random seed '''
 setup_seed(args.seed)
 
-exp_save='/cluster/work/cvl/guosun/models/cod-counting/'
+exp_save='/home/user1/louis/underwater-fish-counting/logs/'
 
 def main(args):
     if args['dataset'] == 'jhu':
